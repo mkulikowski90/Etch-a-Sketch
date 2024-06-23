@@ -13,13 +13,48 @@
     </header>
 
     <main>
-        <div id="container">
+        <div id="play-area">
+            <div id="container"></div>
+            <div id="instructions">
+                <h2>instructions</h2>
+                <p>This is as a title says Etch a sketch website the default grid size is 16 by 16 squares and default color is black it resets to black after chosing new grid size </p>
+                
+                <h2>Contols</h2>
+                <span>
+                    <button id="reset-board">Board reset</button>
+                    <button id="board-size">Board size</button>
+                    <button id="disable-border">Disable border</button>
+                </span>
+                <h2>Colors</h2>
 
+                <span>
+                    <button onclick="rainbowColorMode()">Rainbow mode</button>
+                    <button onclick="singleColorMode(getRgbColor())">Custom Color</button>
+                </span>
+                    <br />
+                <span>
+                    <button onclick="singleColorMode('red')">Red</button>
+                    <button onclick="singleColorMode('green')">Green</button>
+                    <button onclick="singleColorMode('yellow')">Yellow</button>
+                </span>
+                    <br />
+                <span>
+                    <button onclick="singleColorMode('blue')">Blue</button>
+                    <button onclick="singleColorMode('pink')">Pink</button>
+                    <button onclick="singleColorMode('orange')">Orange</button>
+                </span>
+                    <br />
+                <span>
+                    <button onclick="singleColorMode('brown')">Brown</button>
+                    <button onclick="singleColorMode('purple')">Purple</button>
+                    <button onclick="singleColorMode('grey')">Grey</button>
+                </span>
+            </div>
         </div>
     </main>
 
     <footer>
-        <h2>Made by Michał Kulikowski</h2>
+        <h1>Made by Michał Kulikowski</h1>
     </footer>
 </body>
 </html>
